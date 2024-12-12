@@ -1,11 +1,25 @@
-// MoreInfoPage.jsx
 import React from 'react';
+import '../App.css';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import Project from "./Project";
+import GetInTouch from "./GetInTouch";
+
 
 const MoreInfo = () => {
   return (
     <div>
-      <h1>More Information</h1>
-      <p>This is the page with more info!</p>
+      <header>
+         <nav className="navbar">
+           <a className="navbar-home" href="/">Johnny Hsieh</a>
+           <ul className="navbar-links">
+             <li><Link to="/project">Projects</Link></li>
+             <li><Link to="/getintouch">Get in Touch</Link></li>
+           </ul>
+         </nav>
+       </header>
+       <footer className="main-footer">
+         <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
+       </footer>
     </div>
   );
 };
