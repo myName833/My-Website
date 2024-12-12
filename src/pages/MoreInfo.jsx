@@ -16,8 +16,10 @@ const MoreInfo = () => {
              <li><Link to="/getintouch">Get in Touch</Link></li>
            </ul>
          </nav>
-         <h2>lol</h2>
        </header>
+      <video autoPlay loop muted id="bg-video">
+        <source src="/background-vid.mp4" type="video/mp4" />
+      </video>
        <footer className="main-footer">
          <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
        </footer>

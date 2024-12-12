@@ -14,8 +14,10 @@ const GetInTouch = () => {
              <li><Link to="/moreinfo">More Information</Link></li>
            </ul>
          </nav>
-         <h2>asshole</h2>
        </header>
+       <video autoPlay loop muted id="bg-video">
+          <source src="/background-vid.mp4" type="video/mp4" />
+        </video>
        <footer className="main-footer">
          <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
        </footer>
