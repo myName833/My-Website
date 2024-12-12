@@ -6,11 +6,13 @@ import Project from "./Project";
 import GetInTouch from "./GetInTouch";
 
 const App = () => {
-   const navigate = useNavigate(); // Initialize useNavigate    
+   console.log("App component loaded"); // Check if it's rendering
+
+   const navigate = useNavigate();
 
    const handleMoreInfo = () => {
-     navigate('/moreinfo'); // Correct navigation path
-   };    
+     navigate('/moreinfo');
+   };
 
    return (
      <div>
@@ -37,6 +39,10 @@ const App = () => {
                  <button id="get-started-button" type="button" onClick={handleMoreInfo}>
                    Explore More {'>'}
                  </button>
+                   
+                  <video autoPlay loop muted id="bg-video">
+                    <source src="/background-vid.mp4" type="video/mp4" />
+                  </video>
                </div>
              }
            />
@@ -45,12 +51,11 @@ const App = () => {
            <Route path="/getintouch" element={<GetInTouch />} />
          </Routes>
        </section>
-        
+
        <footer className="main-footer">
          <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
        </footer>
      </div>
    );
 };
-
 export default App;

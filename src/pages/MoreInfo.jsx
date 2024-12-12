@@ -16,6 +16,7 @@ const MoreInfo = () => {
              <li><Link to="/getintouch">Get in Touch</Link></li>
            </ul>
          </nav>
+         <h2>lol</h2>
        </header>
        <footer className="main-footer">
          <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
