@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; /* Vertically align the text */
-    color: black;
+    color: #006D77;
     position: fixed;
     width: 700px;
     left: 100px;
@@ -331,8 +331,206 @@ img:hover{
     left: 0;
     right:0;
     width: 100%;
-    height:100%px;
+    height:800px;
     object-fit:cover; /* Ensure the video covers the entire screen */
     z-index:-1 ;
     opacity: 0.5; /* Send the video behind the content */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    font-size: 20px;
+}
+
+.info-card{
+    position:relative;
+    top:100px;
+    background-color: 	#E2DFD2;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.card-list {
+    list-style-type: none;
+}
+
+.card-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.card-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.full-width-section {
+    grid-column: 1 / -1;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.resource-item {
+    background-color: #FFFFF0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+#goals{
+    text-align: center;
+}
+
+
+#insta-link{
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+@keyframes cardPopOut {
+    0% {
+        opacity: 0;
+        transform: 
+            perspective(1000px) 
+            rotateX(90deg) 
+            rotateY(45deg) 
+            scale(0.3) 
+            translateZ(-500px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: 
+            perspective(1000px) 
+            rotateX(-20deg) 
+            rotateY(-20deg) 
+            scale(1.1) 
+            translateZ(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: 
+            perspective(1000px) 
+            rotateX(0deg) 
+            rotateY(0deg) 
+            scale(1) 
+            translateZ(0);
+    }
+}
+
+@keyframes cardGlow {
+    0%, 100% {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    50% {
+        box-shadow: 0 10px 25px rgba(6, 118, 141, 0.3);
+    }
+}
+
+.info-card {
+    opacity: 0;
+    animation: 
+        cardPopOut 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards,
+        cardGlow 3s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--card-index, 0));
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+/* Staggered animation delays for each card */
+.info-card:nth-child(1) { --card-index: 1; }
+.info-card:nth-child(2) { --card-index: 2; }
+.info-card:nth-child(3) { --card-index: 3; }
+.info-card:nth-child(4) { --card-index: 4; }
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, y #BEBEBE transparent);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 14px;
+}
+
+.info-card:hover::before {
+    opacity: 1;
+}
+
+.info-card:hover {
+    transform: 
+        translateY(-15px) 
+        rotate(2deg) 
+        scale(1.03);
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 
+        0 15px 30px #F4DAB6,
+        0 10px 20px #F4DAB6;
+}
+
+/* Interactive card title effect */
+.card-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #333333, transparent);
+    transition: left 0.5s ease;
+}
+
+.info-card:hover .card-title::after {
+    left: 0;
+}
+
+/* List item hover effect */
+.card-list li {
+    transition: 
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.card-list li:hover {
+    transform: translateX(2 0px);
+    color: #006D77;
 }

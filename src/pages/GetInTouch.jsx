@@ -10,6 +10,7 @@ const GetInTouch = () => {
          <nav className="navbar">
            <a className="navbar-home" href="/">Johnny Hsieh</a>
            <ul className="navbar-links">
+             <li><Link to="/">Home</Link></li>
              <li><Link to="/project">Projects</Link></li>
              <li><Link to="/moreinfo">More Information</Link></li>
            </ul>
