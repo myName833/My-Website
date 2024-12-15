@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
-
-import { motion } from 'framer-motion';
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import MoreInfo from "./MoreInfo";
 import GetInTouch from "./GetInTouch";
 
 const Project = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger the loaded state after a short delay
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+
+    // Cleanup the timer
+    return () => clearTimeout(timer);
+  }, []);
   
   return (
     <div>
@@ -21,60 +30,37 @@ const Project = () => {
         </nav>
       </header>
       <video autoPlay loop muted id="bg-video">
-          <source src="/background-vid.mp4" type="video/mp4" />
+        <source src="/background-vid.mp4" type="video/mp4" />
       </video>
-      <div class="container">
-        <div class="info-grid">
-            <div class="info-card">
-                <h2 class="card-title">Recent Projects</h2>
-                <ul class="card-list">
-                    <li><a href='https://dbhackathonclub.onrender.com/'target='_blank'>DB Hackathon Club Website</a></li>
-                        <ol><a href='https://github.com/myName833/Hackathon-Club-Website-new-' target='_blank'>GitHub Link</a></ol> 
-                    <img id="club-pic"src='club-pic.png'></img>
-                </ul>
-            </div>
-            <div class="info-card">
-                <h2 class="card-title">More?</h2>
-                <ul class="card-list">
-                <li>JS Calculator</li>
-                <li><a href='https://github.com/myName833/Hackathon-Club-Website-new-' target='_blank'>GitHub Link</a></li>
-                <img id="calc-pic"src='JS-pic.png'></img>
-                </ul>
-            </div>
-            <div class="info-card">
-                <h2 class="card-title">Even More??</h2>
-                <ul class="card-list">
-                <li>Weather App</li>
-                <li><a href='https://github.com/myName833/Hackathon-Club-Website-new-' target='_blank'>GitHub Link</a></li>
-                <img id="weather-pic"src='weather-pic.png'></img>
-                </ul>
-            </div>
-
-            <div class="info-card full-width-section">
-                <h2 class="card-title">Goals</h2>
-                <div class="resource-grid">
-                    <div class="resource-item">
-                        <h2>2025 Goals</h2>
-                        <ul id="goals">
-                          <li>UCLA</li>
-                          <li>Programming</li>
-                          <li>4.0 GPA</li>
-                        </ul>
-                        
-                    </div>
-                    <div class="resource-item">
-                        <h3>Future</h3>
-                        <ul id="goals">
-                          <li>Software Engineer</li>
-                          <li>Work Life Balance</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
+      <div className="container">
+        <div className="info-grid">
+          <div className={`info-card ${isLoaded ? 'loaded' : ''}`}>
+            <h2 className="card-title">Recent Projects</h2>
+            <ul className="card-list">
+              <li><a id="project-title" href='https://dbhackathonclub.onrender.com/' target='_blank' rel="noopener noreferrer">DB Hackathon Club Website</a></li>
+              <li><a id="project-github" href='https://github.com/myName833/Hackathon-Club-Website-new-' target='_blank' rel="noopener noreferrer">GitHub Link</a></li> 
+              <img id="club-pic" src='club-pic.png' alt="Club Project" />
+            </ul>
           </div>
-        </div>
-    <footer className="main-footer">
+          <div className={`info-card ${isLoaded ? 'loaded' : ''}`}>
+            <h2 className="card-title">More?</h2>
+            <ul className="card-list">
+              <li><a id="project-title" href='https://myname833.github.io/JS-calculator/' target='_blank' rel="noopener noreferrer">JS Calculator</a></li>
+              <li><a id="project-github" href='https://github.com/myName833/JS-calculator' target='_blank' rel="noopener noreferrer">GitHub Link</a></li>
+              <img id="calc-pic" src='JS-pic.png' alt="Calculator Project" />
+            </ul>
+          </div>
+          <div className={`info-card ${isLoaded ? 'loaded' : ''}`}>
+            <h2 className="card-title">Even More??</h2>
+            <ul className="card-list">
+              <li><a id="project-title" href='https://myname833.github.io/weather-app/' target='_blank' rel="noopener noreferrer">Weather App</a></li>
+              <li><a id="project-github" href='https://github.com/myName833/weather-app' target='_blank' rel="noopener noreferrer">GitHub Link</a></li>
+              <img id="weather-pic" src='weather-pic.png' alt="Weather App Project" />
+            </ul>
+          </div>
+          </div>
+      </div>
+      <footer className="main-footer">
         <p id="footer-copyright">© 2024 Johnny Hsieh. All rights reserved.</p>
       </footer>
     </div>
