@@ -42,7 +42,6 @@ const App = () => {
                  <button id="get-started-button" type="button" onClick={handleMoreInfo}>
                    Explore More {'>'}
                  </button>
-                   
                  
                </div>
              }
