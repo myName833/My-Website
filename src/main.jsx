@@ -9,7 +9,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/My-Website"> {/* Base path for GitHub Pages */}
+    <BrowserRouter basename="/My-Website/"> {/* Base path for GitHub Pages */}
       <Routes>
         {/* Define routes for different components */}
         <Route path="/" element={<App />} /> {/* Home page */}
