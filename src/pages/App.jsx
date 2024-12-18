@@ -26,7 +26,7 @@ const App = () => {
            </ul>
          </nav>
          <video autoPlay loop muted id="bg-home">
-            <source src="/background-vid.mp4" type="video/mp4" />
+            <source src="background-vid.mp4" type="video/mp4" />
           </video>
        </header>
        <section className="home-body">

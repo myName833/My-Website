@@ -28,7 +28,7 @@ const GetInTouch = () => {
         </nav>
       </header>
       <video autoPlay loop muted id="bg-video">
-        <source src="/background-vid.mp4" type="video/mp4" />
+        <source src="background-vid.mp4" type="video/mp4" />
       </video>
       <div className="contact-container">
         <div className="info-grid-getintouch">

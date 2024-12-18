@@ -28,7 +28,7 @@ const MoreInfo = () => {
         </nav>
       </header>
       <video autoPlay loop muted id="bg-video-info">
-        <source src="/background-vid.mp4" type="video/mp4" />
+        <source src="background-vid.mp4" type="video/mp4" />
       </video>
       <div className="container">
         <div className="info-grid">
