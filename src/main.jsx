@@ -9,7 +9,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/My-Website"> {/* Add the basename */}
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/moreinfo" element={<MoreInfo />} />
