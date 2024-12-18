@@ -656,3 +656,85 @@ img:hover{
     left: 0;
     font-weight: bold;
 }
+/* Container for email and contact sections */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    max-height: 500px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+/* Email Style */
+#email-icon {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background: #e6f7ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;    
+}
+
+#email-icon:hover {
+    background: #b3e0ff;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Contact Style */
+.resource-item-getintouch {
+    background-color: #FFFFF0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resource-item-getintouch:hover {
+    transform: translateY(-10px); /* Hover effect for a slight lift */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+
+.resource-item-getintouch h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark text for headings */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resource-item-getintouch p {
+    font-size: 1.1rem;
+    color: #555; /* Lighter color for the description */
+    line-height: 1.5;
+}
+
+.resource-item-getintouch a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #06768d;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.resource-item-getintouch a:hover {
+    color: #002E4C; /* Change link color on hover */
+}
+
+
+
