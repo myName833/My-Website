@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter basename="/My-Website/"> {/* Base path for GitHub Pages */}
       <Routes>
         {/* Define routes for different components */}
-        <Route path="/" element={<App />} /> {/* Home page */}
+        <Route path="*" element={<App />} /> {/* Home page */}
         <Route path="/moreinfo" element={<MoreInfo />} /> {/* MoreInfo page */}
         <Route path="/project" element={<Project />} /> {/* Project page */}
         <Route path="/getintouch" element={<GetInTouch />} /> {/* GetInTouch page */}
