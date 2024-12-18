@@ -38,7 +38,7 @@ const App = () => {
                  <p id="about-me">
                    Hi! My name is Johnny Hsieh, I have passion for technology and problem-solving. I aspire to become a software engineer, using creativity and technical skills to develop innovative solutions.
                  </p>
-                 <img id="my-pic" src="My-pic.jpg" alt="Johnny Hsieh" />
+                 <img id="my-pic" src="my-pic.jpg" alt="Johnny Hsieh" />
                  <button id="get-started-button" type="button" onClick={handleMoreInfo}>
                    Explore More {'>'}
                  </button>

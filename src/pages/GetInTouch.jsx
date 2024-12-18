@@ -37,23 +37,23 @@ const GetInTouch = () => {
             <div className="resource-grid">
               <div className="resource-item-getintouch">
                 <h3>Email</h3>
-                <img id="gmail-icon" src="gail-icon.png" alt="Gmail Icon" />
-                <p>johnnyhsieh@gmail.com</p>
+                <img id="gmail-icon" src="gmail.png" alt="Gmail Icon" />
+                <a href='https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZcQxlSKdMqMvhFdVPFMPgspbnqQhnwhRJQgmRjvzDwKBWQqWDskHCjnmdbBqbmqFvdCHg' target='_blank'>EMAIL ME</a>
               </div>
               <div className="resource-item-getintouch">
                 <h3>Instagram</h3>
-                <img id="insta-icon" src="instagram-icon.png" alt="Instagram Icon" />
-                <p>@johnny_insta</p>
+                <img id="insta-icon" src="instagram.png" alt="Instagram Icon" />
+                <a href='https://www.instagram.com/johnnyhsiehh/' target='_blank'>DM ME</a>
               </div>
               <div className="resource-item-getintouch">
                 <h3>Discord</h3>
-                <img id="discord-icon" src="discord-icon.png" alt="Discord Icon" />
-                <p>Johnny#1234</p>
+                <img id="discord-icon" src="discord.png" alt="Discord Icon" />
+                <a href='discordapp.com/users/johnnyhaha268'>DM ME</a>
               </div>
               <div className="resource-item-getintouch">
-                <h3>Phone</h3>
-                <img id="phone-icon" src="phone-icon.png" alt="Phone Icon" />
-                <p>+1 (123) 456-7890</p>
+                <h3>Phone Number</h3>
+                <img id="phone-icon" src="phone-call.png" alt="Phone Icon" />
+                <a href='tel:9514279030'>(951)-427-9030</a>
               </div>
             </div>
           </div>

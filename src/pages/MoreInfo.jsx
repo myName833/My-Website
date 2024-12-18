@@ -60,15 +60,7 @@ const MoreInfo = () => {
             <h2 className="card-title">Goals</h2>
             <div className="resource-grid">
               <div className="resource-item">
-                <h2>2025 Goals</h2>
-                <ul id="goals">
-                  <li>UCLA</li>
-                  <li>Programming</li>
-                  <li>4.0 GPA</li>
-                </ul>
-              </div>
-              <div className="resource-item">
-                <h3>Future</h3>
+                <h3>My Goals</h3>
                 <ul id="goals">
                   <li>Software Engineer</li>
                   <li>Work Life Balance</li>

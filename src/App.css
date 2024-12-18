@@ -259,7 +259,7 @@ body {
     border-radius: 10px;
     font-size: 40px;
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 330px;
     height:100px;
     background-color: #026a81;
@@ -318,8 +318,8 @@ body {
     border: 5px solid #065465; /* Optional: adds a border color matching your navbar */
     box-shadow: 0 0 10px rgba(0,0,0,0.3); 
     position: absolute;
-    top:200px;
-    right:200px;
+    top:250px;
+    right:150px;
 }
 img:hover{
     transform: scale(1.1);
@@ -332,7 +332,7 @@ img:hover{
     left: 0;
     right:0;
     width: 100%;
-    height:900px;
+    height:830px;
     object-fit:cover; /* Ensure the video covers the entire screen */
     z-index:-1 ;
     opacity: 0.5; /* Send the video behind the content */
@@ -343,7 +343,7 @@ img:hover{
     left: 0;
     right:0;
     width: 100%;
-    height:900px;
+    height:910px;
     object-fit:cover; /* Ensure the video covers the entire screen */
     z-index:-1 ;
     opacity: 0.5; /* Send the video behind the content */
@@ -355,7 +355,7 @@ img:hover{
     left: 0;
     right:0;
     width: 100%;
-    height:900px;
+    height:840px;
     object-fit:cover; /* Ensure the video covers the entire screen */
     z-index:-1 ;
     opacity: 0.5; /* Send the video behind the content */
@@ -403,7 +403,7 @@ img:hover{
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color);
@@ -668,27 +668,6 @@ img:hover{
     border-radius: 10px;
 }
 
-/* Email Style */
-#email-icon {
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
-    margin: 10px 0;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    background: #e6f7ff;
-    border-radius: 5px;
-    transition: all 0.3s ease;    
-}
-
-#email-icon:hover {
-    background: #b3e0ff;
-    color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
 /* Contact Style */
 .resource-item-getintouch {
     background-color: #FFFFF0;
@@ -711,7 +690,7 @@ img:hover{
 
 
 .resource-item-getintouch h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333; /* Dark text for headings */
     font-weight: 600;
     margin-bottom: 10px;
@@ -735,6 +714,7 @@ img:hover{
 .resource-item-getintouch a:hover {
     color: #002E4C; /* Change link color on hover */
 }
+
 
 
 
