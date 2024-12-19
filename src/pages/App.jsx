@@ -18,7 +18,7 @@ const App = () => {
      <div>
        <header>
          <nav className="navbar">
-           <a className="navbar-home" href="/">Johnny Hsieh</a>
+           <a className="navbar-home" href="/My-Website/">Johnny Hsieh</a>
            <ul className="navbar-links">
              <li><Link to="/moreinfo">More Information</Link></li>
              <li><Link to="/project">Projects</Link></li>
