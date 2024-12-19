@@ -11,11 +11,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<App />} /> {/* Home page */}
-        <Route path="moreinfo" element={<MoreInfo />} />
-        <Route path="project" element={<Project />} />
-        <Route path="getintouch" element={<GetInTouch />} />
-        <Route path="*" element={<App />} /> {/* Catch-all route */}
+        <Route path="/" element={<App />} />
+        <Route path="/moreinfo" element={<MoreInfo />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/getintouch" element={<GetInTouch />} />
+        {/* Catch-all route */}
+        <Route path="*" element={<App />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

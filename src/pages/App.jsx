@@ -6,14 +6,10 @@ import Project from "./Project";
 import GetInTouch from "./GetInTouch";
 
 const App = () => {
-   console.log("App component loaded"); // Check if it's rendering
-
    const navigate = useNavigate();
-
    const handleMoreInfo = () => {
      navigate('/moreinfo');
    };
-
    return (
      <div>
        <header>
